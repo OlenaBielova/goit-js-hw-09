@@ -14,14 +14,14 @@ stopBtn.addEventListener('click', onStopBtnClick);
 function onStartBtnClick() {
   if (startBtn.disabled) {
     return;
-  }
-
-  timeID = setInterval(() => {
+  } else {
+    timeID = setInterval(() => {
     document.body.style.backgroundColor = `${(getRandomHexColor())}`
   }, 1000);
 
   startBtn.disabled = true;
   stopBtn.disabled = false;
+  }
 }
 
 function onStopBtnClick() {
