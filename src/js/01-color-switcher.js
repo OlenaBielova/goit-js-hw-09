@@ -16,7 +16,7 @@ function onStartBtnClick() {
     return;
   } else {
     timeID = setInterval(() => {
-    document.body.style.backgroundColor = `${(getRandomHexColor())}`
+    document.body.style.backgroundColor = `${(getRandomHexColor())}`;
   }, 1000);
 
   startBtn.disabled = true;
